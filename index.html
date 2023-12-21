@@ -1,27 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
-  <title>Change the Box</title>
-</head>
-<body>
-<main>
-  <h1>Change the <span>Box</span></h1>
-
-  <div class="box"></div>
-
-  <label for="blur">Blur:</label>
-  <input type="range" id="blur" min="0" max="20" value="0" data-suffix="px">
-
-  <label for="border-radius">Border Radius:</label>
-  <input type="range" id="border-radius" min="0" max="50" value="0" data-suffix="%">
-
-  <label for="color">Color (RGB):</label>
-  <input type="color" id="color" class="color" value="#3498db">
-</main>
-
-<script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <nav>
+      <a href="https://github.com/railanbaigazy" class="nav-text">railanbaigazy</a>
+    </nav>
+    <h1 class="title">Change The <span class="box-text">Box</span></h1>
+    <div class="controls">
+      <label for="boxColor">Color:</label>
+      <input type="color" id="boxColor" class="input-color" value="#3498db">
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
